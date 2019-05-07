@@ -1,6 +1,5 @@
-
-import java.lang.*;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Vector;
 
 class Customer {
     private String name;
@@ -10,19 +9,13 @@ class Customer {
         name = newname;
     }
 
-    ;
-
     public void addRental(Rental arg) {
         rentals.addElement(arg);
     }
 
-    ;
-
     public String getName() {
         return name;
     }
-
-    ;
 
     public String statement() {
         double totalAmount = 0;
